@@ -1,4 +1,4 @@
-# + Mas Cafe
+# + Alpha Diving Club
 
 ## Características:
 
@@ -12,8 +12,8 @@
 
 ## Estructura del proyecto:
 
-* **/pages/**: posee la estructura tradicional para Next.js, pero cada página exporta el default de su componente principal respectivo, proveniente de **/components/www/**
+* **/pages/**: posee la estructura tradicional para Next.js, pero cada página importa por secciones cada componente proveniente de **/components/www/**
 
-* **/components/www/**: acá residen los componentes que pertenecen de primera mano a las páginas, siendo cada **index.tsx** el archivo que exporta el componente como *default* de cada ruta.
+* **/components/www/**: acá residen los componentes por sección que pertenecen de primera mano a las páginas.
 
 * **/lib/**: acá residen los archivos que se reutilizarán en todo el proyecto y que no sean componentes de React, como hooks, utilidades y los modelos de datos que manejará DatoCMS.
