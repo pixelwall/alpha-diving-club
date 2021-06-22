@@ -1,0 +1,79 @@
+.madeBy {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	@apply mt-6;
+}
+
+.madeBy :global(p) {
+	width: 100%;
+	@apply text-sm;
+}
+
+@screen md {
+	.madeBy :global(p) {
+		width: auto;
+	}
+}
+
+@screen sm {
+	.el .paragraph {
+		width: 32ch;
+	}
+}
+
+.elements {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@apply -my-4;
+}
+
+@screen lg {
+	.elements {
+		margin-left: -16px;
+		margin-right: -16px;
+		flex-direction: row;
+	}
+}
+
+.el, .el-alt {
+	display: flex;
+	flex-direction: column;
+	@apply my-4;
+}
+
+@screen lg {
+	.el, .el-alt {
+		@apply px-[16px];
+	}
+	.el:last-of-type {
+		text-align: right;
+	}
+
+	.el:first-of-type {
+		text-align: left;
+	}
+}
+
+.el .title, .el-alt .title {
+	color: black;
+	@apply text-xl;
+	@apply font-title;
+	@apply font-bold;
+}
+
+.el .links, .el-alt .links {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	@apply mt-2;
+}
+
+.el .links :global(a), .el-alt .links :global(a) {
+	@apply my-1;
+}
+
+.el :global(a):hover, .el-alt :global(a):hover {
+	text-decoration: underline;
+}

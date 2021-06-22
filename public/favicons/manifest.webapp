@@ -1,0 +1,14 @@
+{
+  "version": "0.0.0",
+  "name": "Alpha Diving Club",
+  "description": "Alpha Diving Club Official Webpage",
+  "icons": {
+    "60": "/favicons/firefox_app_60x60.png",
+    "128": "/favicons/firefox_app_128x128.png",
+    "512": "/favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "",
+    "url": ""
+  }
+}

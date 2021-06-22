@@ -1,0 +1,87 @@
+.dropdown {
+	position: relative;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	@apply font-bold;
+	@apply py-4;
+	@apply mx-4;
+}
+
+.title:focus {
+	outline: none;
+}
+
+.arrow {
+	@apply ml-2;
+	transition: transform 0.2s;
+	transform: rotate(0deg);
+}
+
+.dropdown:hover .arrow {
+	transform: rotate(180deg);
+}
+
+.dropdown .title span:not(.arrow) {
+	border-bottom: 3px solid;
+	@apply border-transparent;
+	@apply duration-200;
+}
+
+.dropdown:hover .title span:not(.arrow) {
+	@apply border-yellow-300;
+}
+
+.wrapper {
+	position: absolute;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	@apply p-2;
+	@apply py-4;
+	@apply border;
+	@apply shadow-md;
+	background-color: white;
+	@apply rounded-xl;
+	@apply origin-top-right;
+	@apply border-x-gray-500;
+}
+
+.wrapper {
+	display: none;
+}
+
+.dropdown:hover .wrapper {
+	display: flex;
+	pointer-events: auto;
+	animation: fade_in_show 0.2s ease-in-out both;
+}
+
+@keyframes fade_in_show {
+	0% {
+		opacity: 0;
+		transform: scale(0.95)
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1)
+	}
+}
+
+.navLink {
+	display: block;
+	@apply py-1;
+	@apply mx-4;
+	@apply my-1;
+	transition: border 0.2s ease-in-out, color 0s ease-in-out;
+	border-bottom: 3px solid;
+	@apply border-transparent;
+	@apply duration-200;
+}
+
+.navLink:hover {
+	@apply border-blue-300;
+}
