@@ -67,74 +67,72 @@ export default function Navbar() {
 				</button>
 			</div> */}
 			<header
-				className={`rounded-full ${s.header} duration-500 transform-gpu ${
+				className={`${s.header} duration-500 transform-gpu ${
 					!sidebar && !isShowing && '-translate-y-full pointer-events-none'
 				}`}
 			>
 				<Sidebar open={sidebar} toggle={toggleSidebar} />
-				<div className=''>
-					<div
-						className={`${s.headerWrapper} border-b duration-200 ${
-							scrollY > 0
-								? 'border-x-gray-200 rounded-full shadow-md'
-								: 'border-transparent rounded-full shadow-md'
-						}`}
-					>
-						<div className='flex overflow-hidden pointer-events-auto'>
-							<Link href='/'>
-								<a
-									title='Home'
-									className='font-title my-auto transform text-2xl duration-200 overflow-hidden hover:scale-95'
-								>
-									<div className='flex h-full logo justify-center items-center'>
-										<Image
-											src='/images/logo-alt.png'
-											alt='Home'
-											title='Home'
-											objectFit='contain'
-											width={90}
-											height={90}
-											quality={90}
-										/>
-										<h1 className='border-transparent border-b-[3px] mx-4 -mt-[3px]'>
-											Alpha Diving Club
-										</h1>
-									</div>
-								</a>
-							</Link>
+				<div
+					className={`${s.headerWrapper} border-b duration-200 ${
+						scrollY > 0
+							? 'border-x-gray-200 rounded-full shadow-md'
+							: 'border-transparent rounded-full shadow-md'
+					}`}
+				>
+					<div className='flex overflow-hidden pointer-events-auto'>
+						<Link href='/'>
+							<a
+								title='Home'
+								className='font-title my-auto transform text-2xl duration-200 overflow-hidden hover:scale-95'
+							>
+								<div className='flex h-full logo justify-center items-center'>
+									<Image
+										src='/images/logo-alt.png'
+										alt='Home'
+										title='Home'
+										objectFit='contain'
+										width={90}
+										height={90}
+										quality={90}
+									/>
+									<h1 className='border-transparent border-b-[3px] mx-4 -mt-[3px]'>
+										Alpha Diving Club
+									</h1>
+								</div>
+							</a>
+						</Link>
+					</div>
+					<div className={s.elements}>
+						<div className='mr-2 transition-all duration-200 items-center hidden lg:flex'>
+							{nav(globalData).map((n, i) =>
+								n.childrens ? (
+									<Fragment key={i}>
+										<Dropdown titulo={n.titulo} links={n.childrens} />
+									</Fragment>
+								) : (
+									<Link href={n.href || '/'} key={i}>
+										<a className='border-transparent border-b-[3px] mx-4 -mt-[3px] duration-200 hover:border-red-400'>
+											{n.titulo}
+										</a>
+									</Link>
+								)
+							)}
 						</div>
-						<div className={s.elements}>
-							<div className='mr-2 transition-all duration-200 items-center hidden lg:flex'>
-								{nav(globalData).map((n, i) =>
-									n.childrens ? (
-										<Fragment key={i}>
-											<Dropdown titulo={n.titulo} links={n.childrens} />
-										</Fragment>
-									) : (
-										<Link href={n.href || '/'} key={i}>
-											<a className='border-transparent border-b-[3px] mx-4 -mt-[3px] duration-200 hover:border-red-400'>
-												{n.titulo}
-											</a>
-										</Link>
-									)
-								)}
-							</div>
-							{/* TODO: order now button */}
-							{/* <Link href='/menu'>
+						{/* TODO: order now button */}
+						{/* <Link href='/menu'>
 							<a className='bg-transparent rounded-full font-bold font-title border-x-gray-800 border-2 text-sm mb-[2px] py-2 px-4 text-x-gray-800 duration-200 lg:text-base hover:text-white hover:bg-x-gray-800'>
 								Order now
 							</a>
 						</Link> */}
-							{/* TODO: shopping cart icon */}
-							{/* <button className='ml-6 text-x-gray-300 duration-200 items-center hidden snipcart-checkout sm:flex hover:text-x-gray-800'>
+						{/* TODO: shopping cart icon */}
+						{/* <button className='ml-6 text-x-gray-300 duration-200 items-center hidden snipcart-checkout sm:flex hover:text-x-gray-800'>
 							<ShoppingCart24 />
 							<span className='font-bold font-title text-sm ml-2 text-x-gray-800'>
 								{cartQty}
 							</span>
 						</button> */}
-							<div className='ml-6 lg:hidden'>
-								<Hamburger open={sidebar} toggle={toggleSidebar} />
-							</div>
+						<div className='ml-6 lg:hidden'>
+							<Hamburger open={sidebar} toggle={toggleSidebar} />
 						</div>
 					</div>
 				</div>
