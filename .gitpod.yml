@@ -3,7 +3,7 @@ ports:
 - port: 3000
 tasks:
 - init: npm i -g pnpm && pnpm i
-- command: pnpm dev
+- command: npx pnpm dev
 
 vscode:
   extensions:
