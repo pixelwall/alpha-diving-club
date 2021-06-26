@@ -91,11 +91,11 @@ const Information = () => {
 	return (
 		<div className={`text-white ${styles.el}`} style={{ margin: '0' }}>
 			<div className={`${styles.information}`}>
-				<ul className='text-xl mt-10 mr-20 ml-4'>
+				<ul className='text-xl mt-10 mr-20'>
 					<li className='font-bold mb-2'>Connect</li>
 					<li className=''>alphadivingclub@hotmail.com</li>
 				</ul>
-				<ul className='text-xl mt-10 mr-20 ml-4'>
+				<ul className='text-xl mt-10 mr-20'>
 					<li className='font-bold mb-2'>Visit</li>
 					<li className=''>650 sw campus dr, federal way, wa 98023</li>
 				</ul>
@@ -168,7 +168,7 @@ const Childrens = () => {
 }
 
 const Elements = () => (
-	<div className={styles['elements']}>
+	<div className={`ml-4 ${styles['elements']}`}>
 		<Information />
 		{/* <Isolated /> */}
 		<Marketing />
