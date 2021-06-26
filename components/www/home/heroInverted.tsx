@@ -51,7 +51,7 @@ const HeroInverted = () => (
 								enroll in our program.
 							</p>
 							<Link href='/menu'>
-								<a className='bg-blue-400 rounded-full font-medium font-title text-sm mb-[2px] py-4 px-8 text-white duration-200 lg:text-base hover:bg-red-400'>
+								<a className='bg-blue-400 rounded-full font-medium font-title text-sm mb-[2px] py-4 px-8 text-white duration-200 lg:text-base hover:bg-blue-300'>
 									SIGN UP
 								</a>
 							</Link>
