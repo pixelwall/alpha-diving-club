@@ -3,32 +3,10 @@ import Link from 'next/link'
 import Viewport, { setAnim } from '@/components/viewport'
 import Parallax from '@/components/parallax'
 
-const Hero = () => (
+const HeroInverted = () => (
 	<div className='relative'>
-		<div className='flex min-h-screen pt-40 c'>
+		<div className='flex min-h-screen pt-20 xl:pt-0 c'>
 			<div className='flex flex-wrap-reverse my-auto w-full items-center sm:flex-wrap'>
-				<div className='w-full sm:w-1/2'>
-					<Viewport
-						className='pr-2 animate text-4xl xl:text-6xl'
-						style={setAnim({ x: '-1rem', d: '800ms' })}
-					>
-						<div>
-							<h1 className='font-bold text-3xl xl:text-5xl xl:leading-tight'>
-								GO TO THE NEXT LEVEL WITH ALPHA DIVING CLUB
-							</h1>
-							<p className='my-5 text-xl leading-normal'>
-								At Alpha Diving Club, We're all about embracing challenge and
-								having fun in a developing springboard diving program, Providing
-								dive lessons for every level.
-							</p>
-							<Link href='/menu'>
-								<a className='bg-red-500 rounded-full font-medium font-title text-sm mb-[2px] py-4 px-8 text-white duration-200 lg:text-base hover:bg-red-400'>
-									ENROLL NOW
-								</a>
-							</Link>
-						</div>
-					</Viewport>
-				</div>
 				<Viewport
 					className='flex mb-16 w-full animate justify-center lg:justify-end relative sm:w-1/2 lg:mb-0'
 					style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
@@ -52,9 +30,33 @@ const Hero = () => (
 						</Parallax>
 					</div>
 				</Viewport>
+				<div className='w-full sm:w-1/2'>
+					<Viewport
+						className='pr-2 animate text-right text-4xl xl:text-6xl'
+						style={setAnim({ x: '-1rem', d: '800ms' })}
+					>
+						<div>
+							<h1 className='font-bold text-3xl xl:text-5xl xl:leading-tight'>
+								WORK HARD FOR YOUR RESULTS
+							</h1>
+							<p className='my-5 text-xl leading-normal'>
+								We have been building springboard and platform divers from the
+								ground up, and we have realized that the best way to get to
+								achieve your goals is to do it with passion and hard work.
+								Whether we are in Venezuela or in Seattle, Washington our goal
+								is to bring our athletes to the best of their abilities.
+							</p>
+							<Link href='/menu'>
+								<a className='bg-blue-400 rounded-full font-medium font-title text-sm mb-[2px] py-4 px-8 text-white duration-200 lg:text-base hover:bg-red-400'>
+									SIGN UP
+								</a>
+							</Link>
+						</div>
+					</Viewport>
+				</div>
 			</div>
 		</div>
 	</div>
 )
 
-export default Hero
+export default HeroInverted
