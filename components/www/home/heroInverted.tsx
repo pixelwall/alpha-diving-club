@@ -35,7 +35,7 @@ const HeroInverted = () => (
 						className='pr-2 animate text-right text-4xl xl:text-6xl'
 						style={setAnim({ x: '-1rem', d: '800ms' })}
 					>
-						<div>
+						<div className=''>
 							<h1 className='font-bold text-3xl xl:text-5xl xl:leading-tight'>
 								WORK HARD FOR YOUR RESULTS
 							</h1>
@@ -45,6 +45,10 @@ const HeroInverted = () => (
 								achieve your goals is to do it with passion and hard work.
 								Whether we are in Venezuela or in Seattle, Washington our goal
 								is to bring our athletes to the best of their abilities.
+							</p>
+							<p className='pl-8 my-5 text-lg leading-normal'>
+								Once you've done your tryout, click at the button below to
+								enroll in our program.
 							</p>
 							<Link href='/menu'>
 								<a className='bg-blue-400 rounded-full font-medium font-title text-sm mb-[2px] py-4 px-8 text-white duration-200 lg:text-base hover:bg-red-400'>
