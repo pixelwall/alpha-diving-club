@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Viewport, { setAnim } from '@/components/viewport'
 import Parallax from '@/components/parallax'
-import LargeCard from './card'
+import LargeCard from './largeCard'
 
 const LargeCards = () => {
 	const cardInfo = [

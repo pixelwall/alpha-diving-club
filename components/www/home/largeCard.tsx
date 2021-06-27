@@ -2,24 +2,28 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Viewport, { setAnim } from '@/components/viewport'
 import Parallax from '@/components/parallax'
+import styles from './styles/largeCard.module.css'
 
 const LargeCard = ({ props }) => (
-	<div className='shadow-md mx-auto my-8 lg:my-12'>
+	<div className={`${styles['largeCard']} shadow-md mx-auto my-8 lg:my-12`}>
 		{/* <Viewport
 			className='flex flex-col mr-0 mb-16 w-full animate justify-center lg:justify-end relative sm:w-1/2 lg:mb-0'
 			style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
 		> */}
-		<Image
-			src={`/images/${props.image}`}
-			alt=''
-			width={300}
-			height={180}
-			objectFit='contain'
-			layout='intrinsic'
-		/>
-		<div className='mx-4 mt-6 mb-4'>
-			<h2 className='text-2xl font-extrabold'>{props.name}</h2>
-			<p className='text-red-500'>{props.description}</p>
+		<div className={`${styles['image']}`}>
+			<Image
+				className='w-full h-full'
+				src={`/images/${props.image}`}
+				alt=''
+				width='100%'
+				height='100%'
+				objectFit='cover'
+				layout='intrinsic'
+			/>
+		</div>
+		<div className='w-full h-full px-4 pt-6 pb-4'>
+			<h2 className='mb-2 text-xl font-black'>{props.name}</h2>
+			<p className='leading-relaxed text-md'>{props.description}</p>
 		</div>
 		{/* </Viewport> */}
 	</div>
