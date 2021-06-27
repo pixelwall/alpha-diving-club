@@ -73,10 +73,10 @@ export default function Navbar() {
 			>
 				<Sidebar open={sidebar} toggle={toggleSidebar} />
 				<div
-					className={`${s.headerWrapper} border-b duration-200 ${
-						scrollY > 0
-							? 'border-x-gray-200 rounded-full shadow-md'
-							: 'border-transparent rounded-full shadow-md'
+					className={`${
+						s.headerWrapper
+					} rounded-full shadow-md border-b duration-200 ${
+						scrollY > 0 ? 'border-x-gray-200 mt-0' : 'border-transparent mt-6'
 					}`}
 				>
 					<div className='flex overflow-hidden pointer-events-auto'>
