@@ -87,17 +87,20 @@ export default function Navbar() {
 							>
 								<div className='flex h-full logo justify-center items-center'>
 									<Image
-										src='/images/logo-alt.png'
+										src='/images/logo.png'
 										alt='Home'
 										title='Home'
 										objectFit='contain'
-										width={90}
-										height={90}
+										width={70}
+										height={70}
 										quality={90}
 									/>
 									<h1 className='border-transparent border-b-[3px] mx-4 -mt-[3px]'>
 										Alpha Diving Club
 									</h1>
+									<div className=''>
+										<input type='range' max='1' name='choice' />
+									</div>
 								</div>
 							</a>
 						</Link>
