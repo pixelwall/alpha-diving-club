@@ -36,7 +36,7 @@ const Marketing = () => {
 					dangerouslySetInnerHTML={{ __html: globalInfo?.footerDescription }}
 				/>
 			</div> */}
-			<div className='text-white flex mt-8 items-center'>
+			<div className='text-white flex lg:mt-8 items-center'>
 				{/* <p className={styles['title']}>Follow us</p> */}
 				{/* <div className='flex -mx-2 pl-4 text-x-gray-300 items-center'> */}
 				<a
@@ -91,12 +91,12 @@ const Information = () => {
 	return (
 		<div className={`text-white ${styles.el}`} style={{ margin: '0' }}>
 			<div className={`${styles.information}`}>
-				<ul className='text-xl mt-10 mr-20'>
-					<li className='font-bold mb-2'>Connect</li>
+				<ul className='text-md lg:text-xl mt-8 lg:mt-10 mr-20'>
+					<li className='font-bold lg:mb-2'>Connect</li>
 					<li className=''>alphadivingclub@hotmail.com</li>
 				</ul>
-				<ul className='text-xl mt-10 mr-20'>
-					<li className='font-bold mb-2'>Visit</li>
+				<ul className='text-md lg:text-xl mt-2 lg:mt-10 mr-20'>
+					<li className='font-bold lg:mb-2'>Visit</li>
 					<li className=''>650 sw campus dr, federal way, wa 98023</li>
 				</ul>
 			</div>

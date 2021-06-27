@@ -6,7 +6,7 @@ import styles from './styles/quote.module.css'
 
 const Quote = () => (
 	<div
-		className={`${styles['wallpaper']} flex flex-row-reverse my-8 lg:my-20 h-96 w-full px-0 pt-20 xl:pt-0 c`}
+		className={`${styles['wallpaper']} flex flex-row-reverse mt-8 mb-4 lg:my-20 h-96 w-full px-0 pt-8 lg:pt-20 xl:pt-0 c`}
 	>
 		{/* <div className='flex my-auto w-full sm:flex-wrap'> */}
 		{/* <div className='w-full sm:w-1/2'> */}

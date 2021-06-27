@@ -21,7 +21,7 @@ const LargeCard = ({ props }) => (
 				objectFit='cover'
 			/>
 		</div>
-		<div className='w-full h-full px-4 pt-6 pb-4'>
+		<div className='w-full lg:h-full px-4 pt-6 pb-4'>
 			<h2 className='mb-2 text-xl font-black'>{props.name}</h2>
 			<p className='leading-relaxed text-md'>{props.description}</p>
 		</div>
