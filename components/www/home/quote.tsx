@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Viewport, { setAnim } from '@/components/viewport'
 import Parallax from '@/components/parallax'
-// import styles from './styles/quote.module.css'
+import styles from './styles/quote.module.css'
 
 const Quote = () => (
 	<div
