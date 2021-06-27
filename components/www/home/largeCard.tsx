@@ -8,23 +8,28 @@ const LargeCard = ({ props }) => (
 	<div
 		className={`${styles['largeCard']} shadow-md mx-auto my-8 lg:my-12 transform hover:scale-110 duration-200 hover:cursor-pointer`}
 	>
-		{/* <Viewport
+		<Viewport
+			className='pr-2 animate'
+			style={setAnim({ x: '-1rem', d: '800ms' })}
+		>
+			{/* <Viewport
 			className='flex flex-col mr-0 mb-16 w-full animate justify-center lg:justify-end relative sm:w-1/2 lg:mb-0'
 			style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
 		> */}
-		<div className={`${styles['image']}`}>
-			<Image
-				src={`/images/${props.image}`}
-				alt=''
-				width={451}
-				height={291}
-				objectFit='cover'
-			/>
-		</div>
-		<div className='w-full lg:h-full px-4 pt-6 pb-4'>
-			<h2 className='mb-2 text-xl font-black'>{props.name}</h2>
-			<p className='leading-relaxed text-md'>{props.description}</p>
-		</div>
+			<div className={`${styles['image']}`}>
+				<Image
+					src={`/images/${props.image}`}
+					alt=''
+					width={451}
+					height={291}
+					objectFit='cover'
+				/>
+			</div>
+			<div className='w-full lg:h-full px-4 pt-6 pb-4'>
+				<h2 className='mb-2 text-xl font-black'>{props.name}</h2>
+				<p className='leading-relaxed text-md'>{props.description}</p>
+			</div>
+		</Viewport>
 		{/* </Viewport> */}
 	</div>
 )
