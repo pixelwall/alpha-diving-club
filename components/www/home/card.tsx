@@ -13,11 +13,11 @@ const Card = ({ props }) => (
 			src={`/images/${props.image}`}
 			alt=''
 			width={300}
-			height={180}
-			objectFit='contain'
+			height={200}
+			objectFit='cover'
 			layout='intrinsic'
 		/>
-		<div className='mx-4 mt-6 mb-4'>
+		<div className='mx-4 mt-3 mb-4'>
 			<h2 className='text-2xl font-extrabold'>{props.name}</h2>
 			<p>{props.description}</p>
 			<h2 className='text-2xl font-extrabold text-right'>{props.price}</h2>

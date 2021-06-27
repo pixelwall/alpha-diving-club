@@ -12,13 +12,11 @@ const LargeCard = ({ props }) => (
 		> */}
 		<div className={`${styles['image']}`}>
 			<Image
-				className='w-full h-full'
 				src={`/images/${props.image}`}
 				alt=''
-				width='100%'
-				height='100%'
+				width={451}
+				height={291}
 				objectFit='cover'
-				layout='intrinsic'
 			/>
 		</div>
 		<div className='w-full h-full px-4 pt-6 pb-4'>

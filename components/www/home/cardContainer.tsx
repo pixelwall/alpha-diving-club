@@ -7,19 +7,19 @@ import Card from './card'
 const Cards = () => {
 	const cardInfo = [
 		{
-			image: 'arepa.png',
+			image: 'position.jpg',
 			name: 'School I',
 			description: '2 hours of practice a week',
 			price: '$199',
 		},
 		{
-			image: 'arepita.png',
+			image: 'stretch.jpg',
 			name: 'School II',
 			description: '4 hours of practice a week',
 			price: '$230',
 		},
 		{
-			image: 'logo.png',
+			image: 'stand.jpg',
 			name: 'School III',
 			description: '6 hours of practice a week',
 			price: '$299',
