@@ -8,7 +8,7 @@ const HeroCenter = () => (
 			<div className='flex flex-wrap-reverse w-full items-center sm:flex-wrap'>
 				{/* <div className='w-full sm:w-1/2'> */}
 				<Viewport
-					className='mx-auto w-2/4 pr-2 animate text-center text-4xl xl:text-6xl'
+					className='mx-auto lg:w-2/4 pr-2 animate text-center text-4xl xl:text-6xl'
 					style={setAnim({ x: '-1rem', d: '800ms' })}
 				>
 					<div className=''>

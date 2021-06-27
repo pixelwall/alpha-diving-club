@@ -10,7 +10,7 @@ const Card = ({ props }) => (
 			style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
 		> */}
 		<Image
-			src='/images/arepa.png'
+			src={`/images/${props.image}`}
 			alt=''
 			width={300}
 			height={180}
