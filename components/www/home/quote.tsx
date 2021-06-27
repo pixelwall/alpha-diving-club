@@ -11,7 +11,7 @@ const Quote = () => (
 		{/* <div className='flex my-auto w-full sm:flex-wrap'> */}
 		{/* <div className='w-full sm:w-1/2'> */}
 		<Viewport
-			className='my-auto sm:w-5/12 flex flex-col mr-32 animate text-right text-4xl xl:text-6xl'
+			className='text-white my-auto sm:w-5/12 flex flex-col mr-32 animate text-right text-4xl xl:text-6xl'
 			style={setAnim({ x: '-1rem', d: '800ms' })}
 		>
 			<h1 className='font-extrabold text-3xl xl:text-3xl xl:leading-tight'>

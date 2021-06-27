@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Viewport, { setAnim } from '@/components/viewport'
 import Parallax from '@/components/parallax'
 
-const HeroCenter = () => (
+const HeroCenter = ({ props }) => (
 	<div className='relative'>
 		<div className='flex items-center pt-20 xl:pt-0 c'>
 			<div className='flex flex-wrap-reverse w-full items-center sm:flex-wrap'>
@@ -12,16 +12,13 @@ const HeroCenter = () => (
 					style={setAnim({ x: '-1rem', d: '800ms' })}
 				>
 					<div className=''>
-						<p className='text-red-500 leading-normal text-2xl'>Our Lessons</p>
-						<h1 className='font-bold text-3xl xl:text-5xl xl:leading-tight'>
-							Lessons Groups
-						</h1>
-						<p className='my-5 text-xl leading-normal'>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ut
-							voluptas totam rerum. Quaerat alias labore, odio deserunt nemo
-							ipsum error, nam dolores quae saepe quas deleniti, modi facere?
-							Ad?
+						<p className='text-red-500 leading-normal text-2xl'>
+							{props.header}
 						</p>
+						<h1 className='font-bold text-3xl xl:text-5xl xl:leading-tight'>
+							{props.title}
+						</h1>
+						<p className='my-5 text-xl leading-normal'>{props.body}</p>
 					</div>
 				</Viewport>
 				{/* </div> */}

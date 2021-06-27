@@ -12,13 +12,27 @@ const getLayoutProps: GetLayoutProps = () => ({
 	padded: false,
 })
 
+const heroCenterInfo = [
+	{
+		header: 'Our Lessons',
+		title: 'Lessons Groups',
+		body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo corrupti eveniet fugit ipsa! Quos, nemo?',
+	},
+	{
+		header: 'Sub-Levels',
+		title: 'Levels In Our Program',
+		body: 'At Alpha Diving Club we are all about finding the right level for our divers. We currently have two main paths: School and Junior Olympics.',
+	},
+]
+
 const Index = (data: IndexProps) => (
 	<>
 		<Hero />
 		<HeroInverted />
-		<HeroCenter />
+		<HeroCenter props={heroCenterInfo[0]} />
 		<CardContainer />
 		<Quote />
+		<HeroCenter props={heroCenterInfo[1]} />
 	</>
 )
 
