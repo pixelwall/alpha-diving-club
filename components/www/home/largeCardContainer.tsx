@@ -30,7 +30,7 @@ const LargeCards = () => {
 }
 
 const LargeCardContainer = () => (
-	<div className='flex flex-wrap content-between mx-16 lg:mx-28'>
+	<div className='flex flex-wrap content-between lg:mb-16 mx-16 lg:mx-28'>
 		<LargeCards />
 	</div>
 )
