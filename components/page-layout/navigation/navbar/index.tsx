@@ -98,13 +98,13 @@ export default function Navbar() {
 									<h1 className='border-transparent border-b-[3px] mx-4 -mt-[3px]'>
 										Alpha Diving Club
 									</h1>
-									<label className={`${s.switch}`}>
-										<input type={`${s.checkbox}`} checked />
-										<span className={`${s.slider} ${s.round}`}></span>
-									</label>
 								</div>
 							</a>
 						</Link>
+						<label className={`my-auto ml-1 ${s.switch}`}>
+							<input type='checkbox' />
+							<span className={`${s.slider} ${s.round}`}></span>
+						</label>
 					</div>
 					<div className={s.elements}>
 						<div className='mr-2 transition-all duration-200 items-center hidden lg:flex'>
