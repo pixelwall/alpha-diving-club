@@ -98,9 +98,10 @@ export default function Navbar() {
 									<h1 className='border-transparent border-b-[3px] mx-4 -mt-[3px]'>
 										Alpha Diving Club
 									</h1>
-									<div className=''>
-										<input type='range' max='1' name='choice' />
-									</div>
+									<label className={`${s.switch}`}>
+										<input type={`${s.checkbox}`} checked />
+										<span className={`${s.slider} ${s.round}`}></span>
+									</label>
 								</div>
 							</a>
 						</Link>
