@@ -2,9 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Viewport, { setAnim } from '@/components/viewport'
 import Parallax from '@/components/parallax'
+import styles from './styles/hero.module.css'
 
 const Hero = () => (
-	<div className='relative'>
+	<div className={`${styles['wallpaper']} relative`}>
 		<div className='flex min-h-screen pt-40 c'>
 			<div className='flex flex-wrap-reverse my-auto w-full items-center sm:flex-wrap'>
 				<div className='w-full sm:w-1/2'>
