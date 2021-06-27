@@ -4,7 +4,7 @@ import Viewport, { setAnim } from '@/components/viewport'
 import Parallax from '@/components/parallax'
 
 const Card = ({ props }) => (
-	<div className='shadow-md mx-auto my-8 lg:my-12'>
+	<div className='shadow-md mx-auto my-8 lg:my-12 transform hover:scale-110 duration-200 hover:cursor-pointer'>
 		{/* <Viewport
 			className='flex flex-col mr-0 mb-16 w-full animate justify-center lg:justify-end relative sm:w-1/2 lg:mb-0'
 			style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}

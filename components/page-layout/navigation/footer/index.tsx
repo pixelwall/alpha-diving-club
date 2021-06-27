@@ -41,19 +41,19 @@ const Marketing = () => {
 				{/* <div className='flex -mx-2 pl-4 text-x-gray-300 items-center'> */}
 				<a
 					href={contactInfo?.instagram}
-					className='bg-red-500 rounded p-2 mr-3 duration-200 hover:bg-red-400'
+					className='bg-red-500 rounded p-2 mr-3 duration-200 hover:bg-red-400 hover:cursor-pointer'
 				>
 					<LogoInstagram32 />
 				</a>
 				<a
 					href={contactInfo?.facebook}
-					className='bg-red-500 rounded p-2 mr-3 duration-200 hover:bg-red-400'
+					className='bg-red-500 rounded p-2 mr-3 duration-200 hover:bg-red-400 hover:cursor-pointer'
 				>
 					<LogoFacebook32 />
 				</a>
 				<a
 					href={contactInfo?.instagram}
-					className='bg-red-500 rounded p-2 mr-3 duration-200 hover:bg-red-400'
+					className='bg-red-500 rounded p-2 mr-3 duration-200 hover:bg-red-400 hover:cursor-pointer'
 				>
 					<LogoTwitter32 />
 				</a>
