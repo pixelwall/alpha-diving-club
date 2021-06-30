@@ -1,6 +1,6 @@
 .largeCard {
 	/* height: 25rem; */
-	width: 28rem;
+	width: 20rem;
 }
 
 /* .imageContainer {
@@ -8,14 +8,10 @@
 	width: 100%;
 } */
 
-@screen md {
-	
-}
-
 @screen lg {
 	.largeCard {
 		height: 30rem;
-		width: 28rem;
+		width: 24rem;
 	}
 
 	/* .imageContainer {
