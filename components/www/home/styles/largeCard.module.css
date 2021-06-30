@@ -3,9 +3,13 @@
 	width: 28rem;
 }
 
-.image {
+/* .imageContainer {
 	height: 9rem;
 	width: 100%;
+} */
+
+@screen md {
+	
 }
 
 @screen lg {
@@ -14,8 +18,7 @@
 		width: 28rem;
 	}
 
-	.image {
+	/* .imageContainer {
 		height: 18rem;
-		width: 100%;
-	}
+	} */
 }
