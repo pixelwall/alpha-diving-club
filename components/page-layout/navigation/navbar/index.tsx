@@ -104,7 +104,7 @@ export default function Navbar() {
 								</div>
 							</a>
 						</Link>
-						<div className='my-auto hidden md:block'>
+						<div className='my-auto hidden lg:block'>
 							<ToggleButton />
 						</div>
 					</div>
