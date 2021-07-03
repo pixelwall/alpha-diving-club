@@ -63,7 +63,7 @@ module.exports = {
   purge: [
     './{pages,lib,components,www,styles}/**/*.{html,js,ts,jsx,tsx,css,pcss}',
   ],
-  darkMode: false,
+  darkMode: 'class',
   theme: {
     extend: {
       'animation': {

@@ -1,7 +1,13 @@
+.information {
+	display: flex;
+	flex-direction: column;
+}
+
 .madeBy {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
+	margin-left: 1rem;
 	@apply mt-6;
 }
 
@@ -13,6 +19,11 @@
 @screen md {
 	.madeBy :global(p) {
 		width: auto;
+	}
+
+	.information {
+		flex-direction: row;
+		margin-left: 1rem;
 	}
 }
 
@@ -37,14 +48,16 @@
 	}
 }
 
-.el, .el-alt {
+.el,
+.el-alt {
 	display: flex;
 	flex-direction: column;
 	@apply my-4;
 }
 
 @screen lg {
-	.el, .el-alt {
+	.el,
+	.el-alt {
 		@apply px-[16px];
 	}
 	.el:last-of-type {
@@ -56,24 +69,28 @@
 	}
 }
 
-.el .title, .el-alt .title {
+.el .title,
+.el-alt .title {
 	color: black;
 	@apply text-xl;
 	@apply font-title;
 	@apply font-bold;
 }
 
-.el .links, .el-alt .links {
+.el .links,
+.el-alt .links {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	@apply mt-2;
 }
 
-.el .links :global(a), .el-alt .links :global(a) {
+.el .links :global(a),
+.el-alt .links :global(a) {
 	@apply my-1;
 }
 
-.el :global(a):hover, .el-alt :global(a):hover {
+.el :global(a):hover,
+.el-alt :global(a):hover {
 	text-decoration: underline;
 }
