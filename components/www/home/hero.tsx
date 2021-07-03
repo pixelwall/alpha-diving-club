@@ -14,7 +14,7 @@ const Hero = () => (
 						style={setAnim({ x: '-1rem', d: '800ms' })}
 					>
 						<div>
-							<h1 className='font-bold text-3xl xl:text-5xl xl:leading-tight'>
+							<h1 className='dark:text-white font-bold text-3xl xl:text-5xl xl:leading-tight'>
 								GO TO THE NEXT LEVEL WITH ALPHA DIVING CLUB
 							</h1>
 							<p className='my-5 text-xl leading-normal'>
