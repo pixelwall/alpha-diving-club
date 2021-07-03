@@ -2,6 +2,7 @@
 import type { RefObject } from 'react'
 import React, { useRef, useState, useEffect } from 'react'
 import s from './styles/toggle.module.css'
+import { useGlobalDataContext } from '@/components/page-layout'
 
 // const [checked, setChecked] = useState(false)
 // const toggleChecked = () => setChecked(!checked)
@@ -33,7 +34,6 @@ export default function ToggleButton() {
 	// 	console.log('after: ' + darkMode)
 	// }, [darkMode])
 
-	const labelRef: RefObject<HTMLLabelElement> = useRef(null)
 	return (
 		<label
 			// className={`my-auto ml-1 ${s.switch} ${darkMode ? 'checked' : ''}`}
@@ -45,3 +45,5 @@ export default function ToggleButton() {
 		</label>
 	)
 }
+
+export default ToggleButton

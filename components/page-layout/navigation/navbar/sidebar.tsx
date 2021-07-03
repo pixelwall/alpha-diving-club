@@ -120,6 +120,8 @@ const Childs = ({ toggle }: { toggle?: () => void }) => {
 
 const Wrapper = (props: { toggle?: () => void }) => {
 	const [childMenu] = useChildState()
+	const [darkMode, setDarkMode] = useState(false)
+	const toggleDarkMode = () => setDarkMode(!darkMode)
 
 	// const css: CSSProperties = {
 	// 	animationDelay: `${(idx - 1) * 200 - 300}ms` as string,
@@ -129,7 +131,7 @@ const Wrapper = (props: { toggle?: () => void }) => {
 	return (
 		<div className={s.sidebarWrapper}>
 			<div className='mt-6'>
-				<ToggleButton />
+				<ToggleButton checked={darkMode} toggle={toggleDarkMode} />
 			</div>
 			{childMenu ? <Childs {...props} /> : <Parents {...props} />}
 		</div>
