@@ -13,10 +13,10 @@ import { useSnipcartContext } from '@/components/snipcart'
 
 export default function Navbar() {
 	const [sidebar, setSidebar] = useState(false)
-	// const [darkMode, setDarkMode] = useState(false)
+	const [darkMode, setDarkMode] = useState(false)
 	const [scrollY, setScrollY] = useState<number>(null)
 	const toggleSidebar = () => setSidebar(!sidebar)
-	// const toggleDarkMode = () => setDarkMode(!darkMode)
+	const toggleDarkMode = () => setDarkMode(!darkMode)
 	const globalData = useGlobalDataContext()
 	const { cartQty } = useSnipcartContext()
 
@@ -105,7 +105,7 @@ export default function Navbar() {
 							</a>
 						</Link>
 						<div className='my-auto hidden lg:block'>
-							<ToggleButton />
+							<ToggleButton checked={darkMode} toggle={toggleDarkMode} />
 						</div>
 					</div>
 					<div className={s.elements}>
