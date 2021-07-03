@@ -3,12 +3,18 @@ import type { RefObject } from 'react'
 import React, { useRef, useState, useEffect } from 'react'
 import s from './styles/toggle.module.css'
 
-const toggleDarkMode = () => {
+// const [checked, setChecked] = useState(false)
+// const toggleChecked = () => setChecked(!checked)
+
+function toggleDarkMode(evt) {
+	// toggleChecked()
 	const htmlClassList = document.documentElement.classList
 
-	htmlClassList.contains('dark')
-		? htmlClassList.remove('dark')
-		: htmlClassList.add('dark')
+	if (evt.target.checked) {
+		htmlClassList.add('dark')
+	} else {
+		htmlClassList.remove('dark')
+	}
 
 	// darkMode
 	// ? document.documentElement.classList.add('dark')
