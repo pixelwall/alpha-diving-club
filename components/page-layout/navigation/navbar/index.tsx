@@ -13,8 +13,8 @@ import { useSnipcartContext } from '@/components/snipcart'
 
 export default function Navbar() {
 	const [sidebar, setSidebar] = useState(false)
-	const [darkMode, setDarkMode] = useState(false)
-	const toggleDarkMode = () => setDarkMode(!darkMode)
+	// const [darkMode, setDarkMode] = useState(false)
+	// const toggleDarkMode = () => setDarkMode(!darkMode)
 	const [scrollY, setScrollY] = useState<number>(null)
 	const toggleSidebar = () => setSidebar(!sidebar)
 	const globalData = useGlobalDataContext()
