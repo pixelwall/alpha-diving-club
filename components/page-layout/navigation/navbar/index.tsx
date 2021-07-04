@@ -105,7 +105,7 @@ export default function Navbar() {
 							</a>
 						</Link>
 						<div className='my-auto hidden lg:block'>
-							<ToggleButton checked={darkMode} toggle={toggleDarkMode} />
+							<ToggleButton />
 						</div>
 					</div>
 					<div className={s.elements}>

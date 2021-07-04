@@ -38,12 +38,9 @@ export default function ToggleButton() {
 		<label
 			// className={`my-auto ml-1 ${s.switch} ${darkMode ? 'checked' : ''}`}
 			className={`my-auto ml-1 ${s.switch}`}
-			ref={labelRef}
 		>
 			<input type='checkbox' onClick={toggleDarkMode} />
 			<span className={`${s.slider} ${s.round}`}></span>
 		</label>
 	)
 }
-
-export default ToggleButton
