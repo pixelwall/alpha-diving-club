@@ -34,24 +34,16 @@ const Hero = () => (
 					className='flex mb-16 w-full animate justify-center lg:justify-end relative sm:w-1/2 lg:mb-0'
 					style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
 				>
-					<div
-						className='h-full animate w-7/10 -z-10 absolute lg:h-80 lg:w-80'
-						style={setAnim({ x: '-1.25rem', y: '-1.25rem', d: '0.2s' })}
-					>
-						<div className='h-full rounded-[50%] w-full transform translate-x-5 translate-y-5 polka' />
-					</div>
-					<div className='flex bg-blue-300 bg-opacity-50 rounded-[50%] w-7/10 items-center justify-center lg:h-80 lg:w-80'>
-						<Parallax negative className='p-4'>
-							<Image
-								src='/images/arepa.png'
-								alt=''
-								width={481}
-								height={481}
-								objectFit='contain'
-								layout='intrinsic'
-							/>
-						</Parallax>
-					</div>
+					{/* <Parallax negative className='p-4'> */}
+					<Image
+						src='/images/helpCustom.png'
+						alt=''
+						width={581}
+						height={581}
+						objectFit='contain'
+						layout='intrinsic'
+					/>
+					{/* </Parallax> */}
 				</Viewport>
 			</div>
 		</div>
