@@ -6,9 +6,9 @@ import styles from './styles/hero.module.css'
 
 const Hero = () => (
 	<div className={`${styles['wallpaper']} relative`}>
-		<div className='flex min-h-screen pt-40 c'>
+		<div className='flex min-h-screen pt-30 c'>
 			<div className='flex flex-wrap-reverse my-auto w-full items-center sm:flex-wrap'>
-				<div className='w-full sm:w-1/2'>
+				<div className='pt-40 z-10 w-full sm:w-1/2'>
 					<Viewport
 						className='pr-2 animate text-4xl xl:text-6xl'
 						style={setAnim({ x: '-1rem', d: '800ms' })}
@@ -31,17 +31,18 @@ const Hero = () => (
 					</Viewport>
 				</div>
 				<Viewport
-					className='flex mb-16 w-full animate justify-center lg:justify-end relative sm:w-1/2 lg:mb-0'
+					className='absolute z-0 flex mb-16 w-full animate justify-center lg:justify-end relative lg:mb-0'
 					style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
 				>
 					{/* <Parallax negative className='p-4'> */}
 					<Image
 						src='/images/helpCustom.png'
 						alt=''
-						width={581}
-						height={581}
-						objectFit='contain'
+						width={841}
+						height={681}
+						// objectFit='contain'
 						layout='intrinsic'
+						className='absolute'
 					/>
 					{/* </Parallax> */}
 				</Viewport>
