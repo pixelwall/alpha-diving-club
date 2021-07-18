@@ -34,17 +34,14 @@ const Hero = () => (
 					className='absolute z-0 flex mb-16 w-full animate justify-center lg:justify-end relative lg:mb-0'
 					style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
 				>
-					{/* <Parallax negative className='p-4'> */}
 					<Image
 						src='/images/helpCustom.png'
 						alt=''
 						width={841}
 						height={681}
-						// objectFit='contain'
 						layout='intrinsic'
 						className='absolute'
 					/>
-					{/* </Parallax> */}
 				</Viewport>
 			</div>
 		</div>
