@@ -7,13 +7,13 @@ import LargeCard from './largeCard'
 const LargeCards = () => {
 	const cardInfo = [
 		{
-			image: 'school.jpg',
+			image: 'juniorteam.jpg',
 			name: 'School',
 			description:
 				'This is the entry level of all of our divers, where they learn the fundamentals and get ready to invitational competitions and High School diving. We have 3 sub-divisions on this path.',
 		},
 		{
-			image: 'olimpics.jpg',
+			image: 'team.jpg',
 			name: 'Junior Olimpics',
 			description:
 				'This is our competitive Team. This group is dedicated to represent our Team in Regional, Zones, Nationals and beyond. Ask for specific information about the price. This group has up to fourteen hours of practice per week.',
