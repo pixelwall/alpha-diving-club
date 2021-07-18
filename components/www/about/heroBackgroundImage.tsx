@@ -1,5 +1,5 @@
 import Viewport, { setAnim } from '@/components/viewport'
-import styles from './styles/quote.module.css'
+import styles from './styles/backgroundImage.module.css'
 
 const HeroBackgroundImage = () => (
 	<div
