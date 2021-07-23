@@ -6,9 +6,9 @@ import styles from './styles/hero.module.css'
 
 const Hero = () => (
 	<div className={`${styles['wallpaper']} relative`}>
-		<div className='flex min-h-screen pt-30 c'>
-			<div className='flex flex-wrap-reverse my-auto w-full items-center sm:flex-wrap'>
-				<div className='pt-40 z-10 w-full sm:w-1/2'>
+		<div className='flex min-h-screen pt-30 c pr-0'>
+			<div className='flex flex-col-reverse md:flex-row flex-wrap-reverse my-auto w-full items-center sm:flex-wrap'>
+				<div className='md:pt-40 z-10 w-full sm:w-1/2'>
 					<Viewport
 						className='pr-2 animate text-4xl xl:text-6xl'
 						style={setAnim({ x: '-1rem', d: '800ms' })}
@@ -31,7 +31,7 @@ const Hero = () => (
 					</Viewport>
 				</div>
 				<Viewport
-					className='absolute z-0 flex mb-16 w-full animate justify-center lg:justify-end relative lg:mb-0'
+					className='md:absolute z-0 flex mb-16 w-full animate justify-center lg:justify-end relative lg:mb-0'
 					style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
 				>
 					<Image
