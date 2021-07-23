@@ -12,7 +12,7 @@ const HeroCenter = ({ props }) => (
 				>
 					<div className=''>
 						<p className='text-red-500 leading-normal text-2xl'>
-							{props.header}
+							{props.extra}
 						</p>
 						<h1 className='font-bold text-3xl xl:text-5xl xl:leading-tight'>
 							{props.title}

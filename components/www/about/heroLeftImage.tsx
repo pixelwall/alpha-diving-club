@@ -36,11 +36,11 @@ const HeroLeftImage = ({ props }) => (
 					>
 						<div className=''>
 							<h1 className='font-bold text-3xl xl:text-5xl xl:leading-tight'>
-								{props.header.toUpperCase()}
+								{props.title.toUpperCase()}
 							</h1>
 							<p className='my-5 text-xl leading-normal'>{props.body}</p>
 							<p className='pl-8 my-5 text-lg leading-normal'>
-								{props.footer}
+								{props.extra}
 							</p>
 						</div>
 					</Viewport>
