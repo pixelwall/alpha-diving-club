@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useState } from 'react'
 import Link from 'next/link'
 import Hamburger from './hamburguer'
+import ToggleButton from './toggleButton'
 import Sidebar from './sidebar'
 import Dropdown from './dropdown'
 import s from './styles/navbar.module.css'
@@ -12,6 +13,8 @@ import { useSnipcartContext } from '@/components/snipcart'
 
 export default function Navbar() {
 	const [sidebar, setSidebar] = useState(false)
+	// const [darkMode, setDarkMode] = useState(false)
+	// const toggleDarkMode = () => setDarkMode(!darkMode)
 	const [scrollY, setScrollY] = useState<number>(null)
 	const toggleSidebar = () => setSidebar(!sidebar)
 	const globalData = useGlobalDataContext()
@@ -53,6 +56,7 @@ export default function Navbar() {
 
 	return (
 		<>
+			{/* TODO: don't know */}
 			{/* <div
 				className={`bg-white border-t border-l duration-500 rounded-tl-lg border-x-gray-200 p-4 transform-gpu right-0 bottom-0 z-10 fixed sm:hidden ${
 					!sidebar && !isShowing && 'translate-y-full pointer-events-none'
@@ -72,29 +76,37 @@ export default function Navbar() {
 			>
 				<Sidebar open={sidebar} toggle={toggleSidebar} />
 				<div
-					className={`${s.headerWrapper} border-b duration-200 ${
-						scrollY > 0 ? 'border-x-gray-200' : 'border-transparent'
+					className={`${
+						s.headerWrapper
+					} rounded-full shadow-md border-b duration-200 ${
+						scrollY > 0 ? 'border-x-gray-200 mt-0' : 'border-transparent mt-6'
 					}`}
 				>
 					<div className='flex overflow-hidden pointer-events-auto'>
 						<Link href='/'>
 							<a
 								title='Home'
-								className='font-bold font-title my-auto transform text-2xl text-blue-800 duration-200 overflow-hidden hover:scale-95'
+								className='font-title my-auto transform text-2xl duration-200 overflow-hidden hover:scale-95'
 							>
 								<div className='flex h-full logo justify-center items-center'>
 									<Image
-										src='/images/logo-alt.png'
+										src='/images/logo.png'
 										alt='Home'
 										title='Home'
 										objectFit='contain'
-										width={90}
-										height={90}
+										width={70}
+										height={70}
 										quality={90}
 									/>
+									<h1 className='border-transparent border-b-[3px] mx-4 -mt-[3px]'>
+										Alpha Diving Club
+									</h1>
 								</div>
 							</a>
 						</Link>
+						<div className='my-auto hidden lg:block'>
+							<ToggleButton />
+						</div>
 					</div>
 					<div className={s.elements}>
 						<div className='mr-2 transition-all duration-200 items-center hidden lg:flex'>
@@ -105,24 +117,26 @@ export default function Navbar() {
 									</Fragment>
 								) : (
 									<Link href={n.href || '/'} key={i}>
-										<a className='border-transparent font-bold border-b-[3px] mx-4 -mt-[3px] duration-200 hover:border-yellow-300'>
+										<a className='border-transparent border-b-[3px] mx-4 -mt-[3px] duration-200 hover:border-red-400'>
 											{n.titulo}
 										</a>
 									</Link>
 								)
 							)}
 						</div>
-						<Link href='/menu'>
+						{/* TODO: order now button */}
+						{/* <Link href='/menu'>
 							<a className='bg-transparent rounded-full font-bold font-title border-x-gray-800 border-2 text-sm mb-[2px] py-2 px-4 text-x-gray-800 duration-200 lg:text-base hover:text-white hover:bg-x-gray-800'>
 								Order now
 							</a>
-						</Link>
-						<button className='ml-6 text-x-gray-300 duration-200 items-center hidden snipcart-checkout sm:flex hover:text-x-gray-800'>
+						</Link> */}
+						{/* TODO: shopping cart icon */}
+						{/* <button className='ml-6 text-x-gray-300 duration-200 items-center hidden snipcart-checkout sm:flex hover:text-x-gray-800'>
 							<ShoppingCart24 />
 							<span className='font-bold font-title text-sm ml-2 text-x-gray-800'>
 								{cartQty}
 							</span>
-						</button>
+						</button> */}
 						<div className='ml-6 lg:hidden'>
 							<Hamburger open={sidebar} toggle={toggleSidebar} />
 						</div>
