@@ -1,0 +1,11 @@
+.image {
+	display: none;
+    height: 0;
+    width: 0;
+}
+
+@screen md {
+	.image {
+		display: block;
+	}
+}

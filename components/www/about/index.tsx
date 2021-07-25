@@ -1,11 +1,9 @@
 import { GetLayoutProps, PageProps } from '@/components/page-layout'
-import Image from 'next/image'
 import HeroBackgroundImage from './heroBackgroundImage'
 import HeroLeftImage from './heroLeftImage'
 import HeroRightImage from './heroRightImage'
 import HeroCenter from './heroCenter'
-import QuoteImageTop from './quoteImageTop'
-import QuoteImageBottom from './quoteImageBottom'
+import QuoteContainer from './quoteContainer'
 
 export type IndexProps = PageProps
 
@@ -45,38 +43,12 @@ const heroInfo = [
 	}
 ]
 
-const quoteInfo = [
-	{
-		image: 'diveCustom.png',
-		title: 'Seattle, Washington. USA',
-		body: `We arrived in Seattle, Washington on September of 2015 and for the past 3 years we have been building divers from the ground up. Using safe and methodologically planned workouts.
-        In 2018, 8 of our divers made the qualification to USA Diving Junior Olympic Nationals.`,
-	},
-	{
-		image: 'rollingCustom.png',
-		title: 'Venezuela',
-		body: `Our story started in 1999 while living in Venezuela. Alejandra Fuentes was preparing for the 2000 Sydney Olimpic Games and Ilich Marcano was preparing the next generation of champion. Time went by and divers such as Robert Paez and Maria Betancourt became the result of all the hard work placed throughout many years.`,
-		footer: '',
-	},
-]
-
 const Index = (data: IndexProps) => (
 	<>
 		<HeroBackgroundImage />
 		<HeroLeftImage props={heroInfo[0]} />
 		<HeroCenter props={heroInfo[1]} />
-		<div className="flex mx-12">
-			<QuoteImageTop props={quoteInfo[0]}/>
-			<Image
-					src={'/images/blueline.png'}
-					alt=''
-					width={111}
-					height={481}
-					objectFit='contain'
-					layout='intrinsic'
-				/>
-			<QuoteImageBottom props={quoteInfo[1]} />
-		</div>
+		<QuoteContainer />
 		<HeroLeftImage props={heroInfo[2]} />
 		<HeroRightImage props={heroInfo[3]} />
 	</>
