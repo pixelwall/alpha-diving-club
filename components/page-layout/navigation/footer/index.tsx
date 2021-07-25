@@ -95,7 +95,7 @@ const Information = () => {
 					<li className='font-bold lg:mb-2'>Connect</li>
 					<li className=''>alphadivingclub@hotmail.com</li>
 				</ul>
-				<ul className='text-md lg:text-xl mt-2 lg:mt-10 mr-20'>
+				<ul className='text-md lg:text-xl mt-2 md:mt-8 lg:mt-10 mr-20'>
 					<li className='font-bold lg:mb-2'>Visit</li>
 					<li className=''>650 sw campus dr, federal way, wa 98023</li>
 				</ul>
