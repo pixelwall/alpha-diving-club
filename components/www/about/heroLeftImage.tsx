@@ -4,7 +4,7 @@ import Parallax from '@/components/parallax'
 
 const HeroLeftImage = ({ props }) => (
 	<div className='relative'>
-		<div className='flex min-h-screen pt-16 xl:pt-0 c'>
+		<div className='flex min-h-screen md:pt-16 xl:pt-0 c'>
 			<div className='flex flex-wrap-reverse my-auto w-full items-center sm:flex-wrap'>
 				<Viewport
 					className='flex mb-16 w-full animate justify-center lg:justify-end relative sm:w-1/2 lg:mb-0'

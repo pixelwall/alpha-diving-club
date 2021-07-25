@@ -21,15 +21,20 @@ const quoteInfo = [
 const QuoteContainer = () => (
 	<div className='flex flex-col md:flex-row mx-12'>
 		<QuoteImageTop props={quoteInfo[0]} />
-		<Image
+		<img
+			src={'/images/blueline.png'}
+			alt=''
+			className={`${styles['image']}`}
+		/>
+		{/* <Image
 			src={'/images/blueline.png'}
 			alt=''
 			width={111}
 			height={481}
 			// hidden={true}
 			// objectFit='contain'
-			// className={`${styles['image']}`}
-		/>
+			className={`${styles['image']}`}
+		/> */}
 		<QuoteImageBottom props={quoteInfo[1]} />
 	</div>
 )

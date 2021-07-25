@@ -3,7 +3,7 @@ import Viewport, { setAnim } from '@/components/viewport'
 
 const HeroCenter = ({ props }) => (
 	<div className='relative'>
-		<div className='flex items-center pt-8 lg:pt-20 xl:pt-0 c'>
+		<div className='flex items-center md:pt-8 lg:pt-20 xl:pt-0 c'>
 			<div className='flex flex-wrap-reverse w-full items-center sm:flex-wrap'>
 				{/* <div className='w-full sm:w-1/2'> */}
 				<Viewport

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Viewport, { setAnim } from '@/components/viewport'
 
 const QuoteImageBottom = ({ props }) => (
-	<div className='flex min-h-screen px-0 pt-16 mb-20 c'>
+	<div className='flex min-h-screen px-0 md:pt-16 mb-20 c'>
 		<div className='flex flex-col flex-wrap-reverse my-auto w-full items-center sm:flex-wrap'>
 			<div className='w-full sm:w-1/2'>
 				<Viewport
