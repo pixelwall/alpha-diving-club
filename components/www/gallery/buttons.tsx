@@ -2,7 +2,10 @@ import Viewport, { setAnim } from '@/components/viewport'
 import Link from 'next/link'
 
 const Buttons = () => (
-	<div className='flex relative my-6 tracking-widest'>
+	<Viewport
+		className='animate flex relative my-6 tracking-widest'
+		style={setAnim({ x: '-1rem', d: '800ms' })}
+	>
 		<div className='hover:bg-gray-200 duration-200 cursor-pointer rounded-full shadow py-3 px-6 mx-4'>
 			<Link href='/gallery'>
 				<p className='inline text-xl'>Photos</p>
@@ -23,7 +26,7 @@ const Buttons = () => (
 				<p className='inline text-xl'>Events</p>
 			</Link>
 		</div>
-	</div>
+	</Viewport>
 )
 
 export default Buttons
