@@ -34,14 +34,7 @@ const Hero = () => (
 					className='md:absolute z-0 flex mb-16 w-full animate justify-center lg:justify-end relative lg:mb-0'
 					style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
 				>
-					<Image
-						src='/images/helpCustom.png'
-						alt=''
-						width={841}
-						height={681}
-						layout='intrinsic'
-						className='absolute'
-					/>
+					
 				</Viewport>
 			</div>
 		</div>
