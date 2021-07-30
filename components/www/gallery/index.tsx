@@ -12,27 +12,20 @@ const getLayoutProps: GetLayoutProps = () => ({
 
 const galleries = [
 	{
-		title: 'owo',
+		title: '',
 		pictures: [
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-		],
-	},
-	{
-		title: 'uwu',
-		pictures: [
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
-			'/images/juniorteam.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
+			'/images/stand.jpg',
 		],
 	},
 ]
