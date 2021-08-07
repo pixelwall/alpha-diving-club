@@ -10,6 +10,7 @@ const getLayoutProps: GetLayoutProps = () => ({
 
 const Index = (data: IndexProps) => (
 	<>
+		<h1 className='text-5xl mb-20'>Aca va el mapa</h1>
 		<Form />
 	</>
 )
