@@ -8,7 +8,7 @@ import QuoteContainer from './quoteContainer'
 export type IndexProps = PageProps
 
 const getLayoutProps: GetLayoutProps = () => ({
-	title: 'Home',
+	title: 'About',
 	padded: false,
 })
 
@@ -39,8 +39,8 @@ const heroInfo = [
 		image: 'aleeCustom.png',
 		title: 'Alejandra Fuentes',
 		body: `Coach Alejandra Fuentes is an Olympic Diver, and attained the 5th Place at Montreal 2005 World Championships. She is considered one of the foremost Aquatic coaches in our home country, Venezuela. "Alee", as we like to call her, and her husband, Ilich Marcano, emigrated to Seattle from their home country with their 2 children, Daniel and Andrea, and are bringing their years of experience in teaching young champions to the Alpha Diving Club's program.`,
-		extra: ''
-	}
+		extra: '',
+	},
 ]
 
 const Index = (data: IndexProps) => (
