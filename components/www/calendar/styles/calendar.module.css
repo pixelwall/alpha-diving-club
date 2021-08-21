@@ -1,0 +1,13 @@
+.calendar {
+	border: 0;
+	margin: 10rem auto 5rem;
+	padding: 0;
+	/* padding-right: 4rem; */
+	/* background-color: red; */
+}
+
+/* @screen md {
+	.calendar {
+		height: 40rem;
+	}
+} */
