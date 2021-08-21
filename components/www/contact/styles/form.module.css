@@ -1,5 +1,42 @@
 .form {
+	margin: auto;
+	padding: 2rem;
+
+	height: 50rem;
+	flex-grow: 1;
+}
+
+/* .image {
+	background: url('/images/stand.jpg');
+	background-size: cover;
+	height: 47rem;
+} */
+
+.image {
+	height: 50rem;
+	flex-grow: 1;
+
+	vertical-align: middle;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 	background: url('/images/jump.jpg');
 	background-size: cover;
-	/* height: 47rem; */
+}
+
+.quote {
+	font-size: 1.5rem;
+	line-height: 2rem;
+
+	font-weight: 800;
+
+	margin-left: 3rem;
+	margin-right: 3rem;
+
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	/* margin-top: 14.5rem; */
+	text-align: center;
 }
