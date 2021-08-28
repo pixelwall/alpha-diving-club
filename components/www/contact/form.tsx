@@ -85,11 +85,15 @@ const Form = () => (
 							<span className='text-red-400 text-sm py-2'></span>
 						</div>
 						<div className='mx-auto'>
-							<Link href='/menu'>
-								<a className='bg-red-500 rounded-full font-bold font-title text-sm inline-flex justify-center py-3 px-8 text-white duration-200 lg:text-base hover:bg-red-400'>
-									SEND
-								</a>
-							</Link>
+							{/* <Link href='/menu'> */}
+							<a
+								href='mailto:ettorej.bortolin@gmail.com'
+								target='_blank'
+								className='bg-red-500 rounded-full font-bold font-title text-sm inline-flex justify-center py-3 px-8 text-white duration-200 lg:text-base hover:bg-red-400 hover:cursor-pointer'
+							>
+								SEND
+							</a>
+							{/* </Link> */}
 						</div>
 					</form>
 				</div>
