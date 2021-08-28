@@ -1,4 +1,5 @@
 import { GetLayoutProps, PageProps } from '@/components/page-layout'
+import Location from './location'
 import Form from './form'
 
 export type IndexProps = PageProps
@@ -10,7 +11,7 @@ const getLayoutProps: GetLayoutProps = () => ({
 
 const Index = (data: IndexProps) => (
 	<>
-		<h1 className='text-5xl mb-20'>Aca va el mapa</h1>
+		<Location/>
 		<Form />
 	</>
 )
