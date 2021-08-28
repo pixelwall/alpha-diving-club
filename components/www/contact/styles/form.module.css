@@ -4,13 +4,12 @@
 
 	height: 55rem;
 	flex-grow: 1;
-}
 
-/* .image {
-	background: url('/images/stand.jpg');
-	background-size: cover;
-	height: 47rem;
-} */
+	/* border: 2px solid red; */
+	/* padding: 10px; */
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
 
 .image {
 	height: 55rem;
@@ -23,6 +22,9 @@
 
 	background: url('/images/jump.jpg');
 	background-size: cover;
+
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
 }
 
 .quote {

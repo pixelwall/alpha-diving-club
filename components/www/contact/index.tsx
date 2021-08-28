@@ -1,6 +1,7 @@
 import { GetLayoutProps, PageProps } from '@/components/page-layout'
 import Location from './location'
 import Form from './form'
+import styles from './styles/form.module.css'
 
 export type IndexProps = PageProps
 
@@ -11,8 +12,10 @@ const getLayoutProps: GetLayoutProps = () => ({
 
 const Index = (data: IndexProps) => (
 	<>
-		<Location/>
-		<Form />
+		<Location />
+		{/* <div className={`${styles['round']}`}> */}
+			<Form />
+		{/* </div> */}
 	</>
 )
 
