@@ -56,7 +56,9 @@ function Form() {
 		>
 			<div className='flex justify-center items-center rounded-xl mx-16 mb-16'>
 				<div className={`shadow w-6/12 ${styles['form']}`}>
-					<h2 className='text-4xl my-8 text-center font-medium'>CONTACT US</h2>
+					<h2 className='text-2xl lg:text-4xl my-8 text-center font-medium'>
+						CONTACT US
+					</h2>
 					<div>
 						<form className='grid grid-cols-1 gap-y-6'>
 							<div>
