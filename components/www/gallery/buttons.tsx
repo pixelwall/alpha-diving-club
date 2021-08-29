@@ -1,9 +1,10 @@
 import Viewport, { setAnim } from '@/components/viewport'
 import Link from 'next/link'
+import styles from './styles/buttons.module.css'
 
 const Buttons = () => (
 	<Viewport
-		className='animate flex relative my-6 tracking-widest'
+		className={`${styles['buttons']} animate relative my-6 tracking-widest`}
 		style={setAnim({ x: '-1rem', d: '800ms' })}
 	>
 		<div className='hover:bg-gray-200 duration-200 cursor-pointer rounded-full shadow py-3 px-6 mx-4'>
