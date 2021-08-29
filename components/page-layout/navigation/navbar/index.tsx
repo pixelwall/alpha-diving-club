@@ -104,9 +104,10 @@ export default function Navbar() {
 								</div>
 							</a>
 						</Link>
-						<div className='my-auto hidden lg:block'>
+						{/* TODO: darkmode button */}
+						{/* <div className='my-auto hidden lg:block'>
 							<ToggleButton />
-						</div>
+						</div> */}
 					</div>
 					<div className={s.elements}>
 						<div className='mr-2 transition-all duration-200 items-center hidden lg:flex'>
@@ -136,7 +137,7 @@ export default function Navbar() {
 							<span className='font-bold font-title text-sm ml-2 text-x-gray-800'>
 								{cartQty}
 							</span>
-						</button> */}
+						</|> */}
 						<div className='ml-6 lg:hidden'>
 							<Hamburger open={sidebar} toggle={toggleSidebar} />
 						</div>

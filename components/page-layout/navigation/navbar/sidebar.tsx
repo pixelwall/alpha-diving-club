@@ -130,9 +130,10 @@ const Wrapper = (props: { toggle?: () => void }) => {
 
 	return (
 		<div className={s.sidebarWrapper}>
-			<div className='mt-6'>
+			{/* TODO: darkmode button */}
+			{/* <div className='mt-6'>
 				<ToggleButton />
-			</div>
+			</div> */}
 			{childMenu ? <Childs {...props} /> : <Parents {...props} />}
 		</div>
 	)
