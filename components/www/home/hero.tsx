@@ -30,7 +30,7 @@ const Hero = () => (
 				</Viewport>
 			</div>
 			<Viewport
-				className='md:absolute z-0 flex mb-16 w-full animate justify-center lg:justify-end relative lg:mb-0'
+				className={`${styles['viewport']} md:absolute z-0 flex mb-16 w-full animate justify-center lg:justify-end relative lg:mb-0`}
 				style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
 			>
 				<Image

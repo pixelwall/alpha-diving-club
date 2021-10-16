@@ -3,9 +3,11 @@
 	background-size: cover;
 }
 
-/* @screen lg {
+.viewport {
+	justify-content: flex-end;
+}
+
+@screen lg {
 	.image {
-		position: relative;
-		left: 100px;
 	}
-} */
+}
