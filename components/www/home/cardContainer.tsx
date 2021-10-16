@@ -10,19 +10,16 @@ const Cards = () => {
 			image: 'helpZoom.jpg',
 			name: 'School I',
 			description: '2 hours of practice a week',
-			price: '$199',
 		},
 		{
 			image: 'grouppositionZoom.jpg',
 			name: 'School II',
 			description: '4 hours of practice a week',
-			price: '$230',
 		},
 		{
 			image: 'standZoom.jpg',
 			name: 'School III',
 			description: '6 hours of practice a week',
-			price: '$299',
 		},
 	]
 

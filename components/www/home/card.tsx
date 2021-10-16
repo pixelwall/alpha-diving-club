@@ -24,7 +24,7 @@ const Card = ({ props }) => (
 			<div className='mx-4 mt-3 mb-4'>
 				<h2 className='text-2xl font-extrabold'>{props.name}</h2>
 				<p>{props.description}</p>
-				<h2 className='text-2xl font-extrabold text-right'>{props.price}</h2>
+				{/* <h2 className='text-2xl font-extrabold text-right'>{props.price}</h2> */}
 			</div>
 			{/* </Viewport> */}
 		</Viewport>
