@@ -2,3 +2,10 @@
 	background: url('/images/position.jpg');
 	background-size: cover;
 }
+
+/* @screen lg {
+	.image {
+		position: relative;
+		left: 100px;
+	}
+} */
