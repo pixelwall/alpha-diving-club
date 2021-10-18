@@ -2,3 +2,12 @@
 	background: url('/images/position.jpg');
 	background-size: cover;
 }
+
+.viewport {
+	justify-content: flex-end;
+}
+
+@screen lg {
+	.image {
+	}
+}

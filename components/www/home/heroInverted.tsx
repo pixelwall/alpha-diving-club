@@ -50,7 +50,7 @@ const HeroInverted = () => (
 								Once you've done your tryout, click at the button below to
 								enroll in our program.
 							</p>
-							<Link href='/menu'>
+							<Link href='https://app3.jackrabbitclass.com/regv2.asp?id=542238'>
 								<a className='bg-blue-400 rounded-full font-medium font-title text-sm mb-[2px] py-4 px-8 text-white duration-200 lg:text-base hover:bg-blue-300'>
 									SIGN UP
 								</a>

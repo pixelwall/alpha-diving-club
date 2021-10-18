@@ -21,7 +21,7 @@ const Hero = () => (
 							having fun in a developing springboard diving program, Providing
 							dive lessons for every level.
 						</p>
-						<Link href='/menu'>
+						<Link href='https://app3.jackrabbitclass.com/regv2.asp?id=542238'>
 							<a className='bg-red-500 rounded-full font-medium font-title text-sm mb-[2px] py-4 px-8 text-white duration-200 lg:text-base hover:bg-red-400'>
 								ENROLL NOW
 							</a>
@@ -30,7 +30,7 @@ const Hero = () => (
 				</Viewport>
 			</div>
 			<Viewport
-				className='md:absolute z-0 flex mb-16 w-full animate justify-center lg:justify-end relative lg:mb-0'
+				className={`${styles['viewport']} md:absolute z-0 flex mb-16 w-full animate justify-center lg:justify-end relative lg:mb-0`}
 				style={setAnim({ x: '1rem', y: '1rem', d: '200ms' })}
 			>
 				<Image
@@ -39,7 +39,7 @@ const Hero = () => (
 					width={841}
 					height={681}
 					layout='intrinsic'
-					className='absolute'
+					className={`absolute ${styles['image']}`}
 				/>
 			</Viewport>
 		</div>
