@@ -35,7 +35,7 @@ const Hero = () => (
 			>
 				<Image
 					src='/images/helpCustom.png'
-					alt=''
+					alt='Practicing an appropiate diving position.'
 					width={841}
 					height={681}
 					layout='intrinsic'
